@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-25T14:56:22" hostname="DESKTOP-1A5GHMB" time="0.065">
+  <properties/>
+  <testcase name="testCreate" classname="com.mindex.challenge.service.impl.ReportingStructureServiceImplTest" time="0.065"/>
+  <system-out><![CDATA[2019-06-25 10:56:22.550  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.service.impl.ReportingStructureServiceImplTest], using SpringBootContextLoader
+2019-06-25 10:56:22.551  INFO 1612 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mindex.challenge.service.impl.ReportingStructureServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-06-25 10:56:22.551  INFO 1612 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.ReportingStructureServiceImplTest]: ReportingStructureServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-06-25 10:56:22.560  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.ReportingStructureServiceImplTest
+2019-06-25 10:56:22.564  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-25 10:56:22.567  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79f07974, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d10b129, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5a3bcda8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1a15db22, org.springframework.test.context.transaction.TransactionalTestExecutionListener@60d42acd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@18b54607, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c678e34, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@289f8a51, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69dc4fcd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b6ba98f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7b5d8af8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2f445ac0]
+2019-06-25 10:56:22.575 DEBUG 1612 --- [o-auto-1-exec-4] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: Pete Best
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.576 DEBUG 1612 --- [o-auto-1-exec-4] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: Pete Best
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.582 DEBUG 1612 --- [o-auto-1-exec-5] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: George Harrison
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.582 DEBUG 1612 --- [o-auto-1-exec-5] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: George Harrison
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.590 DEBUG 1612 --- [o-auto-1-exec-6] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: Ringo Starr
+position: Developer
+dept: Engineering
+dir rep: 2]
+2019-06-25 10:56:22.590 DEBUG 1612 --- [o-auto-1-exec-6] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: Ringo Starr
+position: Developer
+dept: Engineering
+dir rep: 2]
+2019-06-25 10:56:22.600 DEBUG 1612 --- [o-auto-1-exec-7] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: Paul McCartney
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.601 DEBUG 1612 --- [o-auto-1-exec-7] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: Paul McCartney
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.606 DEBUG 1612 --- [o-auto-1-exec-8] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: John Lennon
+position: Developer
+dept: Engineering
+dir rep: 2]
+2019-06-25 10:56:22.607 DEBUG 1612 --- [o-auto-1-exec-8] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: John Lennon
+position: Developer
+dept: Engineering
+dir rep: 2]
+2019-06-25 10:56:22.623 DEBUG 1612 --- [o-auto-1-exec-9] c.m.c.c.ReportingStructureController     : Received report create request for id [9686a283-63f2-4514-93ae-15930208558d]
+2019-06-25 10:56:22.623 DEBUG 1612 --- [o-auto-1-exec-9] c.m.c.s.i.ReportingStructureServiceImpl  : Creating reporting structure [9686a283-63f2-4514-93ae-15930208558d]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-25T14:56:22" hostname="DESKTOP-1A5GHMB" time="0.219">
+  <properties/>
+  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.219"/>
+  <system-out><![CDATA[2019-06-25 10:56:20.717  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest], using SpringBootContextLoader
+2019-06-25 10:56:20.719  INFO 1612 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-06-25 10:56:20.719  INFO 1612 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-06-25 10:56:20.736  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+2019-06-25 10:56:20.740  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-06-25 10:56:20.744  INFO 1612 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b40a097, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@42433890, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ec7750, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c87f758, org.springframework.test.context.transaction.TransactionalTestExecutionListener@622daa47, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3971892a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f412fa3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c4f2e24, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@63bfce78, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@563233fc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5832ae, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1573028f]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2019-06-25 10:56:20.799  INFO 1612 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Starting EmployeeServiceImplTest on DESKTOP-1A5GHMB with PID 1612 (started by Laura in C:\Users\Laura\Documents\programming\Mindex\attempt 1)
+2019-06-25 10:56:20.799 DEBUG 1612 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2019-06-25 10:56:20.799  INFO 1612 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : No active profile set, falling back to default profiles: default
+2019-06-25 10:56:20.801  INFO 1612 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@212740a3: startup date [Tue Jun 25 10:56:20 EDT 2019]; root of context hierarchy
+2019-06-25 10:56:21.411  INFO 1612 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2019-06-25 10:56:21.425  INFO 1612 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-25 10:56:21.427  INFO 1612 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2019-06-25 10:56:21.568  INFO 1612 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-25 10:56:21.569  INFO 1612 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 768 ms
+2019-06-25 10:56:21.720  INFO 1612 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-06-25 10:56:21.725  INFO 1612 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 10:56:21.726  INFO 1612 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 10:56:21.726  INFO 1612 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 10:56:21.726  INFO 1612 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 10:56:22.060  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@212740a3: startup date [Tue Jun 25 10:56:20 EDT 2019]; root of context hierarchy
+2019-06-25 10:56:22.076  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/employee/{id}],methods=[PUT]}" onto public com.mindex.challenge.data.Employee com.mindex.challenge.controller.EmployeeController.update(java.lang.String,com.mindex.challenge.data.Employee)
+2019-06-25 10:56:22.077  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/employee/{id}],methods=[GET]}" onto public com.mindex.challenge.data.Employee com.mindex.challenge.controller.EmployeeController.read(java.lang.String)
+2019-06-25 10:56:22.077  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/employee],methods=[POST]}" onto public com.mindex.challenge.data.Employee com.mindex.challenge.controller.EmployeeController.create(com.mindex.challenge.data.Employee)
+2019-06-25 10:56:22.078  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/report/{id}],methods=[POST]}" onto public com.mindex.challenge.data.ReportingStructure com.mindex.challenge.controller.ReportingStructureController.create(java.lang.String)
+2019-06-25 10:56:22.080  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 10:56:22.080  INFO 1612 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 10:56:22.113  INFO 1612 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:56:22.113  INFO 1612 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:56:22.150  INFO 1612 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:56:22.323  INFO 1612 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 52576 (http)
+2019-06-25 10:56:22.326  INFO 1612 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Started EmployeeServiceImplTest in 1.574 seconds (JVM running for 6.298)
+2019-06-25 10:56:22.450  INFO 1612 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 10:56:22.450  INFO 1612 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 10:56:22.472  INFO 1612 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-06-25 10:56:22.506 DEBUG 1612 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [id: null
+name: John Doe
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.508 DEBUG 1612 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [id: null
+name: John Doe
+position: Developer
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.532 DEBUG 1612 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for id [ef7a3a8e-7a97-4bb6-8fc6-dc563c108539]
+2019-06-25 10:56:22.533 DEBUG 1612 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [ef7a3a8e-7a97-4bb6-8fc6-dc563c108539]
+2019-06-25 10:56:22.542 DEBUG 1612 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for id [ef7a3a8e-7a97-4bb6-8fc6-dc563c108539] and employee [id: ef7a3a8e-7a97-4bb6-8fc6-dc563c108539
+name: John Doe
+position: Development Manager
+dept: Engineering
+dir rep: 0]
+2019-06-25 10:56:22.543 DEBUG 1612 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [id: ef7a3a8e-7a97-4bb6-8fc6-dc563c108539
+name: John Doe
+position: Development Manager
+dept: Engineering
+dir rep: 0]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
